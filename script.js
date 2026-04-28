@@ -23,5 +23,6 @@ else if (
 else {
     result = "You Lose! 😢";
 }
+document.getElementById("winner").innerText = result;
 
 }
