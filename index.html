@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors Game</title>
+    <title>Rock Paper Scissors</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
-    <div class="container">
-        <h1>Rock Paper Scissors</h1>
 
-        <div class="buttons">
-            <button onclick="play('rock')">✊ Rock</button>
-            <button onclick="play('paper')">✋ Paper</button>
-            <button onclick="play('scissors')">✌ Scissors</button>
-        </div>
-    <div class="result">
-            <p id="user-choice">Your Choice: -</p>
-            <p id="computer-choice">Computer Choice: -</p>
-            <h2 id="winner">Make your move!</h2>
-        </div>
+<div class="container">
+
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="buttons">
+        <button class="rock" onclick="play('rock')">🪨 Rock</button>
+
+        <button class="paper" onclick="play('paper')">📄 Paper</button>
+
+        <button class="scissors" onclick="play('scissors')">✂️ Scissors</button>
     </div>
-<!-- FIX: add defer so JS loads properly -->
-    <script src="script.js" defer></script>
 
-</body>
-</html>
+    <div class="result">
+        <p id="user-choice">Your Choice:</p>
 
+        <p id="computer-choice">Computer Choice:</p>
 
-    
+        <p id="winner"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
